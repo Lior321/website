@@ -2,39 +2,61 @@
 <html>
 <head>
 
-<style>
-body {
-  background-color: green;
-}
+    <script>
+        function myFunction() {
+        var a=1;
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    </script>
 
-h1 {
-  color: gray;
-  text-align: center;
-}
+    <style>
+        body {
+          background-color: #fff32f;
+          background-position: right top;
+          background-attachment: fixed;
+        }
+        button{
+          background-color: none;
+          color:red;
+          border-style: solid;
+          border-color: black;
 
-p {
-  color: red;
-  text-align: left;
+        }
+        h1 {
+          color: gray;
+          text-align: center;
+        }
 
-  font-family: verdana;
-  font-size: 20px;
-}
+        p {
+          color: red;
+          text-align: left;
+          border-style: solid;
+          border-color: orange;
+          font-family: verdana;
+          font-size: 20px;
+          background-color: green;
+
+        }
 
 
-</style>
+    </style>
 </head>
+
 <body>
 
-<h1>My First CSS Example</h1>
+<h1>Lior's website</h1>
 <p>This is a paragraph.</p>
 
-<button type="button" onclick="document.getElementById('time').innerHTML = Date()">
-Click me to display Date and Time.</button>
+<button type="button" onclick="myFunction()">
+Try</button>
+<p id="demo">change me</p>
 
-<p id="time"></p>
-
-<button type="button" onclick="document.getElementById('greet').innerHTML = hello">
+<button type="button" onclick="document.getElementById('greet').innerHTML = 'greet'">
 click me to do nothing.</button>
 <p id="greet"></p>
+
+<p>hi</p>
+<p>hi</p>
+
+
 </body>
 </html>
