@@ -3,37 +3,33 @@
 <head>
 
     <script>
+        var a=0;
         function myFunction() {
-        var a=1;
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
+            a++;
+            document.getElementById("check").innerHTML = "Paragraph changed "+a+" times.";
+        }
     </script>
 
     <style>
-        body {
-          background-color: #fff32f;
-          background-position: right top;
-          background-attachment: fixed;
-        }
-        button{
-          background-color: none;
-          color:red;
-          border-style: solid;
-          border-color: black;
+    .empty {
+        border: solid;
+        border-color: black;
+        color: white;
+        background-color: green;
+        text-align: center;
 
         }
-        h1 {
+
+
+
+    h1 {
           color: gray;
           text-align: center;
         }
 
-        p {
+    p {
           color: red;
           text-align: left;
-          border-style: solid;
-          border-color: orange;
-          font-family: verdana;
-          font-size: 20px;
-          background-color: green;
 
         }
 
@@ -46,9 +42,13 @@
 <h1>Lior's website</h1>
 <p>This is a paragraph.</p>
 
-<button type="button" onclick="myFunction()">
-Try</button>
-<p id="demo">change me</p>
+<button type="button" onclick="myFunction()"> Try </button>
+<button type="button" class="empty">good job.</button>
+
+<p id="check">change me</p>
+
+<button><a href="http://localhost:63342/website/file%232.html?_ijt=q53upf8hlpl0b8j1fd5he54pih">link to second page</a></button>
+
 
 <button type="button" onclick="document.getElementById('greet').innerHTML = 'greet'">
 click me to do nothing.</button>
